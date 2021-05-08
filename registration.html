@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+    />
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous">
+    </script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+    crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div class="main"> 
+        <div class="card form">
+            <span class="title">Registration Form</span>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rfname">First Name</span>
+                </div>
+                <input type="text" id="rfname" class="form-control" aria-label="Small" aria-describedby="ig-rfname">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rlname">Last Name</span>
+                </div>
+                <input type="text" id="rlname" class="form-control" aria-label="Small" aria-describedby="ig-rlname">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rdob">Date of birth</span>
+                </div>
+                <input type="date" id="rdob" class="form-control" aria-label="Small" aria-describedby="ig-rdob">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="ig-rgender">Gender</label>
+                </div>
+                <select class="custom-select" id="ig-rgender">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Other</option>
+                </select>
+              </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-remail">Email</span>
+                </div>
+                <input type="email" id="remail" class="form-control" aria-label="Small" aria-describedby="ig-remail">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rmob">Mobile Number</span>
+                </div>
+                <input type="number" pattern="[6-9]{1}[0-9]{9}" id="rmob" class="form-control" aria-label="Small" aria-describedby="ig-rmob">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rclg">College</span>
+                </div>
+                <input type="text" id="rclg" class="form-control" aria-label="Small" aria-describedby="ig-rclg">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="ig-rcourse">Course</label>
+                </div>
+                <select class="custom-select" id="ig-rcourse">
+                  <option value="1">BTech</option>
+                  <option value="2">MTech</option>
+                </select>
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="ig-rbranch">Branch</label>
+                </div>
+                <select class="custom-select" id="ig-rbranch">
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electronics and Communication">Electronics and Communication</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Chemical">Chemical</option>
+                    <option value="Marine">Marine</option>
+                    <option value="Geo Informatics">Geo Informatics</option>
+                    <option value="Metallurgical">Metallurgical</option>
+
+                </select>
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-ryoj">Year Of Joining</span>
+                </div>
+                <input type="number" id="ryoj" class="form-control" aria-label="Small" aria-describedby="ig-ryoj">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="ig-ryos">Year Of Study</label>
+                </div>
+                <select class="custom-select" id="ig-ryos">
+                    <option value="1">1st year</option>
+                    <option value="2">2nd year</option>
+                    <option value="3">3rd year</option>
+                    <option value="4">4th year</option>
+                </select>
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="ig-rregno">Registration Number</span>
+                </div>
+                <input type="number" id="rregno" class="form-control" aria-label="Small" aria-describedby="ig-rregno">
+            </div>
+            <div id="reg-status" class="toast mt-3">
+                <div id="reg-text" class="toast-body">
+                    Student details are registered successfully!
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn btn-light" onclick="onRegister()">Register</button>
+            </div><br>
+            <div class="btn">
+                <a href="index.html" class="btn btn-light"><span>View Students List</span></a>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
